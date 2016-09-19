@@ -21,7 +21,7 @@ export class FriendsPage {
     })
   }
 
-  openMap() {
-    this.navCtrl.push(MessageMapPage);
+  openMap(friend) {
+    this.navCtrl.push(MessageMapPage, { friend });
   }
 }

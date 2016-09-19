@@ -9,6 +9,17 @@
 
 
 <ion-content>
+  <div class="box">
+    <ion-list  no-lines>
+      <ion-item>
+      <ion-label stacked>Mensagem</ion-label>
+      <ion-textarea type="text" [(ngModel)]="message" placeholder="Digite aqui sua mensagem"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <button clock (click)="onSendMessage()">Enviar</button>
+      </ion-item>
+    </ion-list>
+  </div>
   <div id="map">
 
   </div>
